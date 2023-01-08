@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Restaurang Natur - Info</title>
+    <meta charset="utf-8" />
+    <script type="module" src="../js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="stylesheet" href="../stil/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Restaurang Natur</h1>
+      </header>
+
+      <nav>
+        <ul class="navbar-nav">
+          <li><a href="../index.html">Hem</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./info.html">Info</a>
+          </li>
+          <li><a href="./meny.html">Meny</a></li>
+          <li><a href="./dryck.html">Dryck</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+          <li><a href="./event.html">Event</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h1>Info om oss</h1>
+        <p>
+          Restaurang Natur är en växtbaserad restaurang som startades 2022 av
+          Greg Viktorsson. Säsongens råvaror hämtade från Sverige och de
+          nordiska länderna där vi strävar efter en tydlig och nära kontakt med
+          de producenterna vi arbetar med, för att säkerställa kvaliteten på de
+          råvaror. Då vi är en 100% växtbaserad restaurang vill vi arbeta med
+          hållbara gårdar som kan producera på ett sätt som är snällt för
+          naturen och oss. Naturen själv är en av de stora leverantörerna åt oss
+          när det kommer till säsongens råvaror. Att samla de första gröna
+          växterna på våren och blommor och andra örter på sommaren eller när vi
+          går ut och skördar svamp på hösten så skapar det en väldigt nära
+          relation till råvarorna. Vårt uppdrag är att leverera en måltid som
+          berättar en historia om vår plats, vår terroir. Vinerna som vi
+          serverar i restaurangen är naturviner eller biodynamiska vilket
+          innebär att vinmakarna bevarar jordmånen och terroiren, genom att inte
+          tillsätta några kemikalier i odlingarna och inte tillsätta några
+          kemikalier eller liknande. Våra andra populära dryckesalternativ är
+          cocktails som också består av ingredienser som är närproducerat och
+          hantverksmässigt framtagna.
+        </p>
+      </main>
+
+      <aside>
+        <h2>Hitta din perfekta cocktail</h2>
+        <p>Sök i fältet efter din favorit dryck</p>
+        <!-- Sökformulär -->
+        <form action="#" method="get" id="search-form">
+          <input type="text" name="query" value="Pineapple" />
+          <br /><br />
+          <input type="submit" value="Sök" />
+        </form>
+        <p>eller</p>
+        <button type="button" id="suprise">Överaska mig!</button>
+        <!-- Här placerar vi vårt resultat -->
+        <div id="result"></div>
+      </aside>
+
+      <footer>
+        <p>08-111 22 33 - boka@restaurangnatur.se</p>
+      </footer>
+    </div>
+  </body>
+</html>

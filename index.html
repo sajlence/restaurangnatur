@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Restaurang Natur</title>
+    <meta charset="utf-8" />
+    <script type="module" src="js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="stylesheet" href="stil/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Restaurang Natur</h1>
+      </header>
+
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Hem</a>
+          </li>
+          <li><a href="./html/info.html">Info</a></li>
+          <li><a href="./html/meny.html">Meny</a></li>
+          <li><a href="./html/dryck.html">Dryck</a></li>
+          <li><a href="./html/kontakt.html">Kontakt</a></li>
+          <li><a href="./html/event.html">Event</a></li>
+        </ul>
+      </nav>
+
+      <main class="startMain">
+        <h1>Välkommen till oss på Restaurang Natur</h1>
+
+        <!-- Bildspel med diverse bilder -->
+
+        <div class="gallery">
+          <!--div area för bilder-->
+          <div class="wrapper">
+            <img src="images/bord1.png" />
+            <img src="images/bord2.png" />
+            <img src="images/forratt.png" />
+            <img src="images/huvudratt1.png" />
+            <img src="images/huvudratt2.png" />
+            <img src="images/team.png" />
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <h2>Hitta din perfekta cocktail</h2>
+        <p>Sök i fältet efter din favorit dryck</p>
+        <!-- Sökformulär -->
+        <form action="#" method="get" id="search-form">
+          <input type="text" name="query" value="Pineapple" />
+          <br /><br />
+          <input type="submit" value="Sök" />
+        </form>
+        <p>eller</p>
+        <button type="button" id="suprise">Överaska mig!</button>
+        <!-- Här placerar vi vårt resultat -->
+        <div id="result"></div>
+      </aside>
+
+      <footer>
+        <p>08-111 22 33 - boka@restaurangnatur.se</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,370 @@
+/* Färger
+   ========================================================================== */
+
+.color1 {
+  color: #eaf4da;
+}
+.color2 {
+  color: #cee8d2;
+}
+.color3 {
+  color: #e8f0e3;
+}
+.color4 {
+  color: #d4e8b5;
+}
+.color5 {
+  color: #9dd0a5;
+}
+.color6 {
+  color: #5c605a;
+}
+.color7 {
+  color: #545c48;
+}
+.color8 {
+  color: #3e5342;
+}
+
+/* Fonts
+   ========================================================================== */
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Oxygen;
+  src: url(../fonts/Oxygen-Regular.ttf) format("truetype");
+}
+
+/* Grid layout
+   ========================================================================== */
+
+/* Ritar upp en grid där header hamnar överst, nav därunder, en nivå i mitten för, body och aside, 
+    följt av footer längst ned. */
+
+#container {
+  display: grid;
+  grid:
+    "header header header" auto
+    "nav nav nav" auto
+    "main main aside" 1fr
+    "footer footer footer" auto
+    / auto 1fr auto;
+}
+
+#container > header {
+  grid-area: header;
+}
+#container > nav {
+  grid-area: nav;
+}
+#container > main {
+  grid-area: main;
+}
+#container > aside {
+  grid-area: aside;
+}
+#container > footer {
+  grid-area: footer;
+}
+
+/* Body
+   ========================================================================== */
+
+body {
+  background-color: #e8f0e3;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header
+   ========================================================================== */
+
+header {
+  background-image: url(../images/forest-background.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  height: 10rem;
+}
+
+header h1 {
+  font-family: "Oxygen", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Nav
+   ========================================================================== */
+
+/* Ändrar bakgrundsfärg i nav fältet */
+nav {
+  background-color: #e8f0e3;
+  text-align: center;
+}
+
+/* Justerar listan med länkar i*/
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 0.5rem 0px 0;
+  display: inline-block;
+}
+
+nav a {
+  font-family: "Merriweather", cursive;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #545c48;
+  padding: 1rem;
+}
+
+nav a:hover {
+  color: #9dd0a5;
+}
+
+/*code to change background color*/
+.navbar-nav > .active > a {
+  background-color: #ffffff;
+  color: #9dd0a5;
+}
+
+/* Aside
+   ========================================================================== */
+
+aside {
+  background-color: #ffffff;
+  text-align: center;
+  width: 20rem;
+  word-wrap: break-word;
+}
+
+aside h2 {
+  font-family: "Oxygen", cursive;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+aside p {
+  font-family: "Merriweather", cursive;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Varannan rad i aside ska ha normal font-weight */
+aside p:nth-child(2n) {
+  font-weight: normal;
+}
+
+#search-form {
+  padding: 0.5rem;
+}
+
+#suprise {
+  box-shadow: 0px 10px 14px -7px #3e5342;
+  background: #9dd0a5;
+  border-radius: 6px;
+  border: 1px solid #9dd0a5;
+  display: inline-block;
+  font-family: "Oxygen", cursive;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+  margin-bottom: 5rem;
+}
+
+/* Main
+   ========================================================================== */
+
+main {
+  background-color: #ffffff;
+  height: 100%;
+}
+main > h1 {
+  font-family: "Oxygen", cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+main > h2 {
+  font-family: "Oxygen", cursive;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+main > p {
+  font-family: "Merriweather", cursive;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.startMain {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Kontaktsida justeringar
+   ========================================================================== */
+.kontaktSida {
+  display: inline-flex;
+  justify-content: center;
+  flex-shrink: 2;
+}
+
+.bokningsForm {
+  margin: 1rem;
+  width: 20%;
+}
+
+.hittaHit {
+  margin: 2rem;
+}
+
+.uppgifter {
+  margin: 2rem;
+}
+
+/* Form inställningar
+   ========================================================================== */
+
+input[type="submit"] {
+  box-shadow: 0px 10px 14px -7px #3e5342;
+  background: #9dd0a5;
+  border-radius: 6px;
+  border: 1px solid #9dd0a5;
+  display: inline-block;
+  font-family: "Oxygen", cursive;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+
+/* Meny/Dryck justeringar
+   ========================================================================== */
+
+.menyOchDryck {
+  display: flex;
+  justify-content: center;
+}
+
+/* Gallery
+    ========================================================================== */
+
+.gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: fit-content;
+  width: fit-content;
+
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+  border: 4px solid #cee8d2;
+  box-shadow: -1px 5px 15px rgb(0, 0, 0);
+}
+
+/*Bild inställningar för slide*/
+.wrapper {
+  display: flex;
+  animation: slide 20s infinite;
+}
+.wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*Animation på startsidan för bild-slides*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-400%);
+  }
+  90% {
+    transform: translateX(-400%);
+  }
+  95% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+/* Footer
+   ========================================================================== */
+
+footer {
+  background-color: #9dd0a5;
+  height: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  #container {
+    display: grid;
+    grid:
+      "header" auto
+      "nav" auto
+      "main" auto
+      "aside" auto
+      "footer" auto
+      / 1fr;
+  }
+
+  #container > header {
+    grid-area: header;
+  }
+  #container > nav {
+    grid-area: nav;
+  }
+  #container > main {
+    grid-area: main;
+  }
+  #container > aside {
+    grid-area: aside;
+    width: auto;
+  }
+  #container > footer {
+    grid-area: footer;
+  }
+}

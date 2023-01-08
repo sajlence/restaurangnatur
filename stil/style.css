@@ -238,6 +238,29 @@ main > p {
   margin: 2rem;
 }
 
+table {
+  font-family: "Merriweather", cursive;
+  border-collapse: collapse;
+  width: 25%;
+  margin: 2rem;
+}
+
+td, th {
+  border: 3px double #3e5342;
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #cee8d2;
+}
+
+#teamet {
+  margin: 2rem;
+  display: flex;
+  flex-shrink: 1
+}
+
 /* Form inställningar
    ========================================================================== */
 

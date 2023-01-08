@@ -164,6 +164,7 @@ aside p:nth-child(2n) {
 
 #search-form {
   padding: 0.5rem;
+  font-weight: bold;
 }
 
 #suprise {
